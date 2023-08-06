@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrencyConverter</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="OuterBox container-fluid">
+        <div class="CurrencyConvertor container-fluid">
+            <form class="InputForm">
+                <div class="Title">
+                   <p> Currency Converter</p>
+                </div>
+                <div class="InputPart row">
+                    <div class="from col-lg-5 col-12">
+                        <div class="fromInputCurrency">
+                            <label for="fromCurrency">
+                                <img width="50" height="50" src="https://img.icons8.com/color/50/india.png" alt="india"/>
+                            </label>
+                            <select name="fromCurrency" id="fromCurrency" class="fromCurrency"></select>
+                        </div>
+                        
+                        <label for="Amount" id="fromsymbol" class="AmountLabel">₹</label>
+                        <input type="number" name="Amount" id="Amount" class="Amount" value="0">
+                    </div>
+                    <div class="swapBtn col-lg-2 col-12" id="swapBtn">
+                        <img width="60" height="60" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/60/FFFFFF/external-swap-arrows-tanah-basah-basic-outline-tanah-basah.png" alt="external-swap-arrows-tanah-basah-basic-outline-tanah-basah"/>
+                    </div>
+                    <div class="to col-lg-5 col-12">
+                        <div class="toInputCurrency">
+                            <label for="toCurrency">
+                                <img width="50" height="50" src="https://img.icons8.com/color/50/usa.png" alt="usa"/>
+                            </label>
+                            <select name="toCurrency" id="toCurrency" class="toCurrency"></select>
+                        </div>
+    
+                        <label for="result" id="tosymbol" class="resultLabel">$</label>
+                        <input type="text" name="result" id="result" class="result" readonly value=".....">
+                    </div>
+                </div>
+                <div class="ConvertBtnBox">
+                    <input type="submit" value="Convert" id="ConvertBtn" class="ConvertBtn">
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+
+<script src="CurrencySymbol.js"></script>
+<script src="CurrencyCodeList.js"></script>
+<script src="JS.js"></script>
+</html>

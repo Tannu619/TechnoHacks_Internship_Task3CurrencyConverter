@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 500px;
+}
+.OuterBox {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("background1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.OuterBox .CurrencyConvertor {
+    width: 75%;
+    height: 60%;
+    background: linear-gradient(45deg,#ad4520,#868020,transparent);
+    /* border: 1px solid red; */
+    box-shadow: 0rem 0rem 1.6rem 0rem #fdc854;
+    border-radius: 1rem;
+
+}
+.OuterBox .CurrencyConvertor .InputForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.OuterBox .CurrencyConvertor .InputForm .Title {
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.OuterBox .CurrencyConvertor .InputForm .Title p {
+    font-size: 5vw;
+    color: white;
+    font-family: initial;
+}
+
+.OuterBox .CurrencyConvertor .InputForm .InputPart{
+    /* border: 1px solid green; */
+    height: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    /* font-size: 3rem; */
+    /* font-family: initial; */
+    cursor: pointer;
+    /* border: 1PX SOLID blue;*/
+}
+option {
+    color: black;
+}
+.OuterBox .CurrencyConvertor .InputForm .InputPart .from{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+.OuterBox .CurrencyConvertor .InputForm .InputPart .from .fromInputCurrency {
+    width: 100%;
+}
+
+.OuterBox .CurrencyConvertor .InputForm .InputPart .from .fromInputCurrency  label {
+    position: absolute;
+    transform: translateX(0.5rem);
+}
+
+.OuterBox .CurrencyConvertor .InputForm .InputPart .from .fromInputCurrency .fromCurrency {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    border: transparent;
+    border: 2px solid white;
+    color: white;
+    padding-left: 4rem;
+    border-radius: 0.5rem;
+}
+.OuterBox .CurrencyConvertor .InputForm .InputPart .from .fromInputCurrency .fromCurrency:focus {
+    outline: none !important;
+}
+
+
+.OuterBox .CurrencyConvertor .InputForm .InputPart .from .AmountLabel {
+    transform: translate(-7rem, 2rem);
+    font-size: 2.5rem;
+    position: absolute;
+    color: #686e2d;
+}
+.OuterBox .CurrencyConvertor .InputForm .InputPart .from .Amount{
+    width: 17rem;
+    height: 3rem;
+    margin-top: 1rem;
+    border: transparent;
+    border-radius: 1rem;
+    font-size: 2.3rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    color: #686e2d;
+    outline: none;
+    padding-left: 3rem;
+}
+.OuterBox .CurrencyConvertor .InputForm .InputPart .to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.OuterBox .CurrencyConvertor .InputForm .InputPart .to .toInputCurrency {
+    width: 100%;
+}
+
+.OuterBox .CurrencyConvertor .InputForm .InputPart .to .toInputCurrency  label {
+    position: absolute;
+    transform: translateX(0.5rem);
+}
+
+.OuterBox .CurrencyConvertor .InputForm .InputPart .to .toInputCurrency .toCurrency{
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    border: transparent;
+    border: 2px solid white;
+    color: white;
+    padding-left: 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.OuterBox .CurrencyConvertor .InputForm .InputPart .to .resultLabel {
+    transform: translate(-7rem, 2rem);
+    font-size: 2.5rem;
+    position: absolute;
+    color: #686e2d;
+}
+
+.OuterBox .CurrencyConvertor .InputForm .InputPart .to .result {
+    width: 17rem;
+    height: 3rem;
+    margin-top: 1rem;
+    border: transparent;
+    border-radius: 1rem;
+    font-size: 2.3rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    color: #686e2d;
+    outline: none;
+    padding-left: 3rem;
+}
+
+
+.swapBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    font-family: initial;
+    cursor: pointer;
+    /* border: 1PX SOLID blue; */
+}
+
+.OuterBox .CurrencyConvertor .InputForm .ConvertBtnBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+.OuterBox .CurrencyConvertor .InputForm .ConvertBtnBox .ConvertBtn {
+    width: 50%;
+    height: 80%;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    border: transparent;
+    background: linear-gradient(45deg,transparent,#ad4520,#868020);
+    box-shadow: 0rem 0rem 1.6rem 0rem #fdc854;
+    font-size: 2rem;
+    color: white;
+    font-family: initial;
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .swapBtn {
+        /* margin-bottom: -5rem; */
+        position: absolute;
+    }
+    .to {margin-top: -5rem;}
+    .from {margin-bottom: -4rem;}
+    .toCurrency{
+        margin-top: 3rem;
+    }
+    .OuterBox .CurrencyConvertor .InputForm .InputPart .to .resultLabel {
+        transform: translate(-7rem, 3.5rem);
+    }
+    .OuterBox .CurrencyConvertor .InputForm .InputPart .to .toInputCurrency  label{
+        transform: translate(0.5rem, 3rem);
+    }
+    .OuterBox .CurrencyConvertor .InputForm .Title p {
+        font-size: 8vw;
+    }
+}
